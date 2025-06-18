@@ -19,8 +19,16 @@ jobs:
           
       - name: Generate HTML from resume.json
         run: |
-          npm install -g resume-cli jsonresume-theme-elegant
-          resume export resume.html --theme elegant --format html
+          # Install resume-cli globally
+          npm install -g resume-cli
+          
+          # Install theme locally in the current directory
+          npm init -y
+          npm install jsonresume-theme-elegant
+          
+          # Export using the locally installed theme
+          npx resume export resume.html --theme elegant --format html
+          
           echo "Generated HTML file:"
           ls -la resume.html
           
