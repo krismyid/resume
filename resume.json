@@ -1,0 +1,387 @@
+{
+  "basics": {
+    "name": "Christian Windi Utomo",
+    "label": "System Administrator",
+    "picture": "https://jobsid-profile.s3.amazonaws.com/666936-57852e8263a9c.png",
+    "email": "hi@kris.my.id",
+    "phone": "+6282149002334",
+    "website": "https://geek.kris.my.id",
+    "summary": "I've been working in IT industry for more than 10 years, with a focus on DevOps, SRE, and Software Development. I have AWS DevOps and Azure Certification, My passion is for automation, cloud computing, and open source technologies. I enjoy solving complex problems and continuously learning new skills to improve my work, and improve your business along the way.  I am also a quick learner and adaptable to new environments.",
+    "location": {
+      "address": "Bogor, Jawa Barat, Indonesia",
+      "city": "Kota Bekasi",
+      "countryCode": "ID",
+      "region": "Jawa Barat"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "krismyid",
+        "url": "https://www.linkedin.com/in/krismyid"
+      },
+      {
+        "network": "GitHub",
+        "username": "@KrisMyID",
+        "url": "http://github.com/krismyid"
+      },
+      {
+        "network": "Twitter",
+        "username": "@KrisMyID",
+        "url": "http://twitter.com/krismyid"
+      },
+      {
+        "network": "Instagram",
+        "username": "KrisMyID",
+        "url": "http://instagram.com/krismyid"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Elitery - PT Data Sinergitama Jaya",
+      "position": "Fulltime - DevOps Engineer (L2)",
+      "website": "http://elitery.com",
+      "startDate": "2024-02-01",
+      "endDate": "",
+      "summary": "PT Data Sinergitama Jaya, a.k.a Elitery is a Managed Services Provider, empowering Government and Companies accross SEA with their cloud and on premises infrastructure. I work as DevOps Engineer (L2), acting as SME (Subject-Matter Expert) to the team.",
+      "highlights": [
+        "Hired as SRE, work as a backend-engineer / pipeline engineer role",
+        "Hands on jenkins pipeline for Build, Package, Test Unreal Engine project.",
+        "Add Linux functionality support for their windows-based pipeline."
+      ]
+    },
+    {
+      "company": "PT. Accelbyte Teknologi Indonesia",
+      "position": "Fulltime Contract - Site Reliability Engineer",
+      "website": "http://accelbyte.com",
+      "startDate": "2023-09-01",
+      "endDate": "2024-01-01",
+      "summary": "AccelByte is a all in one game hosting solution platform, enabling game dev to focus on building games, and accelbyte provides all their needs to keep the game up and running.",
+      "highlights": [
+        "Hired as SRE, work as a backend-engineer / pipeline engineer role",
+        "Hands on jenkins pipeline for Build, Package, Test Unreal Engine project.",
+        "Add Linux functionality support for their windows-based pipeline."
+      ]
+    },
+    {
+      "company": "PT. Xapiens Teknologi Indonesia",
+      "position": "Fulltime Contract - DevOps Engineer and Cloud Engineer",
+      "website": "http://xapiens.id",
+      "startDate": "2023-03-01",
+      "endDate": "2023-09-01",
+      "summary": "PT. Xapiens Teknologi Indonesia is a technology company that focuses on providing IT solutions for businesses. As a DevOps Engineer and Cloud Engineer, I am responsible for designing, implementing, and maintaining the company's cloud infrastructure, as well as automating the deployment and management of applications.",
+      "highlights": [
+        "Hands-on Kubernetes, Jenkins, Azure DevOps, AWS, for Alva Auto (Electric motorcycle) project.",
+        "Cut cost / optimise cloud cost more than 50%.."
+      ]
+    },
+    {
+      "company": "Arisan Mapan - PT. Rekan Usaha Mikro Anda",
+      "position": "Fulltime - Site Reliability Engineer",
+      "website": "http://mapan.id",
+      "startDate": "2019-09-01",
+      "endDate": "2023-07-01",
+      "summary": "PT. Rekan Usaha Mikro Anda - Mapan is an Indonesia-based company that focuses on providing network of thousands of lower income communities with better access to valuable products and services using technology. As a System Reliability Engineer (with DevOps), I took responsibility to improve the reliability of microservice systems, and this is done through automation and continuous integration and delivery.",
+      "highlights": [
+        "Create pipeline template for build, testing, and deploying microservices app to Kubernetes.",
+        "Administer and Maintain Kubernetes cluster, Application Gateway, and Service Mesh (Kong, Istio)",
+        "Create auto-scale capable Gitlab Runner, using Google Cloud Compute Engine, Instance Group, docker, terraform and ansible.",
+        "Provide developer with ability to use telemetry services (Jaeger, opentelemetry) to analyze software performance and behavior",
+        "Provide developer with Application Performance and Monitoring tools, self-hosted sentry.",
+        "Administer and maintain Elasticsearch ELK stack.",
+        "Administer and maintain CloudSQL Postgres Database.",
+        "Troubleshoot and participate during incidents."
+      ]
+    },
+    {
+      "company": "PT. Imah Mandiri Pratama",
+      "position": "Freelance System Administrator",
+      "website": "http://imahgroup.co.id",
+      "startDate": "2022-08-01",
+      "endDate": "",
+      "summary": "PT. Imah Mandiri Pratama is a business consulting and services company, focusting on Merchant Acquisition and Field Service Management. As a System Administrator, I am responsible for maintaining the company's IT infrastructure, including servers, networks, and security.",
+      "highlights": [
+        "Design and implement cloud infrastructure using Digital Ocean.",
+        "Implement Kobotoolbox for data collection and management.",
+        "Administering and maintaining the company's IT infrastructure, including servers, networks, and security."
+      ]
+    },
+    {
+      "company": "Coffee Meets Stocks - PT. Investor Nilai Indonesia",
+      "position": "Freelance Cloud Architect",
+      "website": "http://coffeemeetstocks.id",
+      "startDate": "2021-06-01",
+      "endDate": "",
+      "summary": "Coffee Meets Stocks is a financial technology company that provides a platform for investors to learn and trade stocks. As a Cloud Architect, I am responsible for designing and implementing the cloud infrastructure that supports the platform.",
+      "highlights": [
+        "Design and implement cloud infrastructure using GCP.",
+        "Implement CI/CD pipelines using GitLab CI/CD",
+        "Implement monitoring and alerting Google Cloud Logging, and Google Cloud Monitoring.",
+        "Implement security best practices using GCP IAM."
+      ]
+    },
+    {
+      "company": "PT. Codigo Cyberlin Metadata (Indika Group)",
+      "position": "IT RnD & Infrastructure",
+      "website": "http://codigo.id",
+      "startDate": "2016-09-20",
+      "endDate": "",
+      "summary": "PT Codigo Cyberlin Metadata (Indika Group) is a software house, developing mobile, & web apps and IT Solutions. I'm jamming with terminator on daily basis, playing on multiple instances of ubuntu, LXCs, docker, haproxy, nginx, php,  mysql, redis, git, etc., and conducts them using salt-stack.",
+      "highlights": [
+        "I'm involved as DevOps for:",
+        "- Zulu (http://zulu.id)",
+        "- Netmedia.co.id",
+        "- NetCJ.co.id (NET. Citizen Journalism platform)",
+        "- Netconnect.netmedia.id (NET. TV Companion app)",
+        "- Qubicle.id",
+        "- Rollingstone.co.id",
+        "- Saliha.id",
+        "- Kawanbaik.id",
+        "Develop VoIP Telephony System using Asterisk",
+        "Deploy and maintain multiple high-hitrate website accross multiple cloud providers.",
+        "Deploy server alert and monitoring system.",
+        "Deploy and maintain Networking"
+      ]
+    },
+    {
+      "company": "PT. Jaring Synergi Mandiri",
+      "position": "IT Research and Development Engineer",
+      "website": "http://jsm.co.id",
+      "startDate": "2016-05-01",
+      "endDate": "2016-09-20",
+      "summary": "PT Jaring Synergi Mandiri is a Business Process Outsourcing company, focusing on call center operations.",
+      "highlights": [
+        "Assist IT System Support team for applying new technology.",
+        "Fit and Gap analysis on a new technoglogy.",
+        "Kickstart the implementation for the new technology.",
+        "Provide Level 3 Support",
+        "Provide documentation"
+      ]
+    },
+    {
+      "company": "PT. Jaring Synergi Mandiri",
+      "position": "Software Developer",
+      "website": "http://jsm.co.id",
+      "startDate": "2014-03-01",
+      "endDate": "2016-05-01",
+      "summary": "Wrote various server back-end background services, for automation.",
+      "highlights": [
+        "Build and maintain server and network infrastructure Konica Minolta Business Solution, Sdn. Bhd. Malaysia - Nation Wide Contact Center.",
+        "Build and maintain server and network infrastructure, Customer Analysis and Tracking System for PT Honda Prospect Motor, Indonesia.",
+        "Monitoring Probe for collecting service's status, and send when failure detected.",
+        "Asterisk IP-PBX IVR Scripting using PHP, MySQL, and Rest API Client.",
+        "Telegram Chat bot for server alert and monitoring using PHP, and Telegram CLI."
+      ]
+    },
+    {
+      "company": "PT Pusaka Integrasi Mandiri",
+      "position": "Security and PCI-DSS Compliance Engineer",
+      "website": "http://www.bluebirdgroup.com/supporting-services/pusaka-integrasi-mandiri",
+      "startDate": "2013-03-01",
+      "endDate": "2014-03-01",
+      "summary": "PT Pusaka Integrasi Mandiri is a subsidiary from PT Blue Bird Group with PT Jaring Syergi Mandiri. PIM serves as a gateway for electronic payments by providing data communication and transaction automation systems to major banks and large corporations in Indonesia.",
+      "highlights": [
+        "Network design, and implementation.",
+        "Keep the infrastructure running 24/7",
+        "Work closely with PCI-DSS auditor for certification."
+      ]
+    },
+    {
+      "company": "PT Jaring Synergi Mandiri",
+      "position": "IT Support Supervisor",
+      "website": "http://jsm.co.id",
+      "startDate": "2010-06-01",
+      "endDate": "2013-03-01",
+      "summary": "",
+      "highlights": [
+        "Provide Level 2 Support",
+        "Supervise day-to-day IT Support operations",
+        "Provide training and assistance for IT Support team",
+        "Manage IT Support Team Performance"
+      ]
+    },
+    {
+      "company": "PT Jaring Synergi Mandiri",
+      "position": "IT Support Staff",
+      "website": "http://jsm.co.id/",
+      "startDate": "2010-02-01",
+      "endDate": "2010-06-01",
+      "summary": "",
+      "highlights": [
+        "Provide Level 1 support",
+        "IT Support day-to-day opertions",
+        "PC and Network troubleshooting",
+        "Data Center Operations",
+        "Building Electricity Operations",
+        "Building Telephony Operations"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universitas Terbuka",
+      "area": "Fakultas Hukum",
+      "studyType": "Bachelor",
+      "startDate": "2023-06-01",
+      "endDate": "",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Universitas Mercu Buana Jakarta",
+      "area": "Information Systems",
+      "studyType": "Bachelor",
+      "startDate": "2014-06-01",
+      "endDate": "",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Bina Nusantara - BINUS Center Jakarta",
+      "area": "Dynamic Web Programming with PHP",
+      "studyType": "Course",
+      "startDate": "2012-03-07",
+      "endDate": "2012-05-12",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Bina Nusantara - BINUS Center Jakarta",
+      "area": "Static Web Programming with XHTML",
+      "studyType": "Course",
+      "startDate": "2012-02-16",
+      "endDate": "2012-03-10",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Bina Nusantara - BINUS Center Jakarta",
+      "area": "Client Side Scripting with JavaScript",
+      "studyType": "Course",
+      "startDate": "2012-03-17",
+      "endDate": "2012-03-7",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Tanmia Informatika Jakarta",
+      "area": "Microsoft C# .NET",
+      "studyType": "Course",
+      "startDate": "2013-07-01",
+      "endDate": "2013-10-08",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Google, Inc.",
+      "area": "Getting Started with Google Cloud Platform",
+      "studyType": "Course",
+      "startDate": "2017-06-04",
+      "endDate": "2017-06-04",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "certificates": [{
+    "name": "AWS Certified DevOps Engineer - Professional",
+    "date": "2024-07-30",
+    "issuer": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/2565e9cd-b60c-47c7-89d6-ffc2aee53c05/linked_in_profile"
+  },
+  {
+    "name": "Aws Certified Developer - Associate",
+    "date": "2024-05-22",
+    "issuer": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/cd821fb1-7a35-4e90-a441-5c777a586dcb/public_url"
+  },
+  {
+    "name": "Microsoft Certified: Azure Fundamentals",
+    "date": "2024-12-27",
+    "issuer": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/users/krismyid/credentials/31e639e0f2f0d469"
+  }],
+  "skills": [
+    {
+      "name": "Server Administration",
+      "level": "",
+      "keywords": [
+        "Linux",
+        "UNIX Based",
+        "LXC",
+        "LXD",
+        "Docker",
+        "Salt Stack",
+        "Elasticsearch",
+        "Influx Data (Telegraf, Influxdb, Kapacitor)",
+        "Grafana",
+        "Windows Server",
+        "High Availability",
+        "Load Balancing",
+        "Asterisk IPPBX VoIP",
+        "MySQL",
+        "MariaDB",
+        "Apache Web Server",
+        "Nginx",
+        "HA-Proxy",
+        "Virtualization"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": [
+        "Go",
+        "Python",
+        "PHP",
+        "Bash",
+        "Bat",
+        "JavaScript",
+        "C# .Net",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Network Administration",
+      "level": "",
+      "keywords": [
+        "Cisco Router",
+        "Cisco Core Switch",
+        "Mikrotik",
+        "Network Design",
+        "pfSense Firewall",
+        "VPN - OpenVPN"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Bahasa Indonesia",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "Guitar",
+        "Piano"
+      ]
+    },
+    {
+      "name": "Videography",
+      "keywords": [
+        "Adobe Premiere",
+        "Adobe After Effects",
+        "Digital Audio Workstation"
+      ]
+    }
+  ],
+  "references": []
+}
