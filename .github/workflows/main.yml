@@ -12,6 +12,18 @@ jobs:
         with:
           persist-credentials: false
           
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
+      - name: Generate HTML from resume.json
+        run: |
+          npm install -g resume-cli jsonresume-theme-elegant
+          resume export resume.html --theme elegant --format html
+          echo "Generated HTML file:"
+          ls -la resume.html
+          
       - name: Build Resume and Deploy on GitHub Pages
         uses: rajivnayanc/resume-creator-action@v1.1.0
         with:
@@ -36,13 +48,14 @@ jobs:
           sudo apt-get install -y google-chrome-stable
           
       - name: Convert HTML to PDF
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - run: |
+        run: |
           npm install -g puppeteer-cli
-          # Try with ./build/index.html instead - a common output location
-          if [ -f "./build/index.html" ]; then
+          # Use our explicitly generated HTML file
+          if [ -f "./resume.html" ]; then
+            echo "Using explicitly generated resume.html"
+            puppeteer --no-sandbox print ./resume.html resume.pdf
+          # Fallback options if needed
+          elif [ -f "./build/index.html" ]; then
             puppeteer --no-sandbox print ./build/index.html resume.pdf
           elif [ -f "./dist/index.html" ]; then
             puppeteer --no-sandbox print ./dist/index.html resume.pdf
