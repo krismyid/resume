@@ -19,6 +19,13 @@ jobs:
         env:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
           
+      - name: Check file structure
+        run: |
+          echo "Checking directory structure after resume creation:"
+          ls -la
+          echo "Finding HTML files:"
+          find . -name "*.html"
+          
       - name: Install Chrome for Puppeteer
         run: |
           sudo apt-get update
@@ -34,7 +41,22 @@ jobs:
           node-version: '16'
       - run: |
           npm install -g puppeteer-cli
-          puppeteer --no-sandbox print ./index.html resume.pdf
+          # Try with ./build/index.html instead - a common output location
+          if [ -f "./build/index.html" ]; then
+            puppeteer --no-sandbox print ./build/index.html resume.pdf
+          elif [ -f "./dist/index.html" ]; then
+            puppeteer --no-sandbox print ./dist/index.html resume.pdf
+          else
+            # Find the first HTML file and use it
+            HTML_FILE=$(find . -name "*.html" | head -n 1)
+            if [ -n "$HTML_FILE" ]; then
+              echo "Using HTML file: $HTML_FILE"
+              puppeteer --no-sandbox print "$HTML_FILE" resume.pdf
+            else
+              echo "No HTML file found!"
+              exit 1
+            fi
+          fi
           
       - name: Create Release
         id: create_release
