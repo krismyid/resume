@@ -46,7 +46,7 @@ GitHub Actions automatically:
 ## 📁 Files
 
 - `resume.tex` - LaTeX source
-- `resume.pdf` - Generated PDF (after build)
+- `Christian_Windi_Utomo_DevOps_SRE_Resume.pdf` - Generated PDF (after build)
 - `Makefile` - Build automation
 - `.github/workflows/latex-resume.yml` - GitHub Actions
 - `README.md` - This file

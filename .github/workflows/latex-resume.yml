@@ -65,13 +65,13 @@ jobs:
             *This PDF was automatically generated from LaTeX source on GitHub Actions.*
             
           files: |
-            resume.pdf
+            Christian_Windi_Utomo_DevOps_SRE_Resume.pdf
             resume.tex
           
       - name: Success notification
         run: |
           echo "🎉 Resume successfully built and released!"
-          echo "📄 PDF: resume.pdf"
+          echo "📄 PDF: Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
           echo "🏷️  Release tag: resume-v${{ github.run_number }}"
-          echo "📊 File size: $(du -h resume.pdf | cut -f1)"
+          echo "📊 File size: $(du -h Christian_Windi_Utomo_DevOps_SRE_Resume.pdf | cut -f1)"
           echo "🔗 Check releases page for download links" 
