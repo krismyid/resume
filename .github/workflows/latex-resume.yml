@@ -37,12 +37,10 @@ jobs:
           
       - name: Create Release
         id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: resume-v${{ github.run_number }}
-          release_name: Resume v${{ github.run_number }} - ${{ github.event.head_commit.message }}
+          name: Resume v${{ github.run_number }} - ${{ github.event.head_commit.message }}
           draft: false
           prerelease: false
           body: |
@@ -64,29 +62,14 @@ jobs:
             
             *This PDF was automatically generated from LaTeX source on GitHub Actions.*
             
-      - name: Upload PDF to Release
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume.pdf
-          asset_name: Christian_Windi_Utomo_Resume.pdf
-          asset_content_type: application/pdf
-          
-      - name: Upload source files to Release
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume.tex
-          asset_name: resume.tex
-          asset_content_type: text/plain
+          files: |
+            resume.pdf
+            resume.tex
           
       - name: Success notification
         run: |
           echo "🎉 Resume successfully built and released!"
           echo "📄 PDF: resume.pdf"
-          echo "🏷️  Release: ${{ steps.create_release.outputs.upload_url }}"
-          echo "📊 File size: $(du -h resume.pdf | cut -f1)" 
+          echo "🏷️  Release tag: resume-v${{ github.run_number }}"
+          echo "📊 File size: $(du -h resume.pdf | cut -f1)"
+          echo "🔗 Check releases page for download links" 
