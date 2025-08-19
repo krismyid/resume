@@ -1,12 +1,14 @@
 # Professional LaTeX Resume
 
-A professional, ATS-compliant LaTeX resume template optimized for DevOps Engineers and Site Reliability Engineers.
+A professional, ATS-compliant LaTeX resume template optimized for DevOps Engineers and Site Reliability Engineers, featuring QR codes for easy credential verification and modern cloud-focused skills.
 
 ## Features
 
 - **ATS Compliant**: Designed to pass through Applicant Tracking Systems
 - **Professional Layout**: Clean, modern design with proper spacing and typography
-- **Optimized Content**: Improved wording and bullet points for maximum impact
+- **QR Code Integration**: Automatic QR codes for certification verification
+- **Cloud-Focused Skills**: DevOps/SRE relevant technical skills and experience
+- **Quantifiable Achievements**: Impact-driven bullet points with measurable results
 - **Easy Customization**: Simple LaTeX structure for easy modifications
 - **Cross-platform**: Works on Linux, macOS, and Windows
 
@@ -52,6 +54,8 @@ This repository includes a GitHub Actions workflow that automatically:
 - **Creates releases** with versioned tags
 - **Uploads** both the PDF and source files to each release
 - **Triggers** when you modify `resume.tex` or the workflow file
+- **Generates QR codes** for certification verification
+- **Maintains ATS compliance** with clean formatting
 
 ### How it works:
 
@@ -81,6 +85,17 @@ pdflatex resume.tex  # Run twice for proper formatting
 - `.github/workflows/latex-resume.yml` - GitHub Actions workflow
 - `README.md` - This file
 
+## Latest Improvements
+
+### Recent Updates (Latest Version):
+- **QR Code Integration**: Automatic QR codes for all certifications
+- **Cloud-Focused Skills**: Enhanced DevOps/SRE relevant technical skills
+- **Quantifiable Achievements**: Impact-driven bullet points with measurable results
+- **Professional Formatting**: Clean, consistent black text throughout
+- **Experience Reorganization**: Prioritized DevOps/SRE relevant experience
+- **Enhanced Security Skills**: Added cloud security, container security, and IAM expertise
+- **Modern Cloud Services**: Specific AWS, Azure, and GCP service knowledge
+
 ## Customization
 
 ### Modifying Content
@@ -91,15 +106,16 @@ Edit `resume.tex` to update:
 - Skills
 - Education
 - Certifications
+- QR code URLs (customize certification verification links)
 
 ### Styling Changes
 
 The resume uses a clean, professional theme with:
-- Primary color: Dark gray (#333333)
-- Secondary color: Medium gray (#666666)
-- Accent color: Blue (#007BFF)
-- Professional fonts and spacing
-- Icon integration using FontAwesome
+- **Consistent black text** throughout for maximum readability
+- **Professional fonts** and optimal spacing
+- **Icon integration** using FontAwesome
+- **QR code integration** for certification verification
+- **Clean, modern layout** optimized for ATS systems
 
 ### Adding Sections
 
@@ -110,6 +126,16 @@ To add new sections, use the `\section{}` command:
 Content goes here...
 ```
 
+### QR Code Integration
+
+The resume automatically generates QR codes for certifications:
+
+```latex
+\blackqr{https://your-certification-url.com}
+```
+
+This creates a 2cm QR code that recruiters can scan from both digital and printed versions.
+
 ## ATS Optimization Features
 
 This resume is designed to be ATS-friendly:
@@ -117,8 +143,11 @@ This resume is designed to be ATS-friendly:
 - **Simple Formatting**: No complex layouts that confuse ATS systems
 - **Standard Fonts**: Uses system fonts for maximum compatibility
 - **Keyword Optimization**: Technical skills and keywords are clearly listed
-- **Clean Structure**: Logical section organization
+- **Clean Structure**: Logical section organization with DevOps/SRE focus
 - **No Graphics**: Text-only format for maximum compatibility
+- **QR Code Integration**: Professional credential verification without ATS interference
+- **Cloud-Focused Skills**: Relevant keywords for modern DevOps positions
+- **Quantifiable Achievements**: Impact-driven language that ATS systems recognize
 
 ## Troubleshooting
 
@@ -138,6 +167,27 @@ This resume is designed to be ATS-friendly:
 
 This template is provided as-is for personal and professional use.
 
+## Technical Skills Overview
+
+The resume includes comprehensive DevOps/SRE skills:
+
+### **Cloud & DevOps:**
+- AWS (EC2, ECS, Lambda, CloudFormation, IAM, VPC)
+- Azure (AKS, Functions, App Service)
+- GCP, Kubernetes, Docker, Terraform, Ansible
+
+### **CI/CD & Automation:**
+- Jenkins, GitLab CI/CD, Azure DevOps, GitHub Actions
+- Python scripting for automation, Infrastructure as Code
+
+### **Security & Monitoring:**
+- Container Security, Cloud Security, IAM, Network Security
+- Prometheus, Grafana, ELK Stack, CloudWatch, Azure Monitor
+
+### **Infrastructure:**
+- Linux/Unix Administration, High Availability, Load Balancing
+- VPC, Security Groups, Network ACLs, VPN, CDN
+
 ## Contributing
 
-Feel free to submit improvements or report issues. The goal is to maintain a professional, ATS-compliant resume template. 
+Feel free to submit improvements or report issues. The goal is to maintain a professional, ATS-compliant resume template optimized for DevOps Engineers and Site Reliability Engineers. 
