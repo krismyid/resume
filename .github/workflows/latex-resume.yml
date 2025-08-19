@@ -1,0 +1,92 @@
+name: Build and Release LaTeX Resume
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'resume.tex'
+      - '.github/workflows/latex-resume.yml'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-latex-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup LaTeX environment
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          latexmk_use_xelatex: false
+          latexmk_use_lualatex: false
+          working_directory: .
+          
+      - name: Verify PDF generation
+        run: |
+          if [ -f "resume.pdf" ]; then
+            echo "✅ PDF generated successfully"
+            ls -la resume.pdf
+            echo "PDF size: $(du -h resume.pdf | cut -f1)"
+          else
+            echo "❌ PDF generation failed"
+            exit 1
+          fi
+          
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: resume-v${{ github.run_number }}
+          release_name: Resume v${{ github.run_number }} - ${{ github.event.head_commit.message }}
+          draft: false
+          prerelease: false
+          body: |
+            ## LaTeX Resume PDF
+            
+            **Generated on:** ${{ github.event.head_commit.timestamp }}
+            **Commit:** ${{ github.sha }}
+            **Branch:** ${{ github.ref_name }}
+            
+            ### Changes in this version:
+            ${{ github.event.head_commit.message }}
+            
+            ### What's included:
+            - Professional ATS-compliant resume in PDF format
+            - Optimized for DevOps Engineer and SRE positions
+            - Clean, professional formatting
+            
+            ---
+            
+            *This PDF was automatically generated from LaTeX source on GitHub Actions.*
+            
+      - name: Upload PDF to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume.pdf
+          asset_name: Christian_Windi_Utomo_Resume.pdf
+          asset_content_type: application/pdf
+          
+      - name: Upload source files to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume.tex
+          asset_name: resume.tex
+          asset_content_type: text/plain
+          
+      - name: Success notification
+        run: |
+          echo "🎉 Resume successfully built and released!"
+          echo "📄 PDF: resume.pdf"
+          echo "🏷️  Release: ${{ steps.create_release.outputs.upload_url }}"
+          echo "📊 File size: $(du -h resume.pdf | cut -f1)" 

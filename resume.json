@@ -43,9 +43,9 @@
       "endDate": "",
       "summary": "PT Data Sinergitama Jaya, a.k.a Elitery is a Managed Services Provider, empowering Government and Companies accross SEA with their cloud and on premises infrastructure. I work as DevOps Engineer (L2), acting as SME (Subject-Matter Expert) to the team.",
       "highlights": [
-        "Hired as SRE, work as a backend-engineer / pipeline engineer role",
-        "Hands on jenkins pipeline for Build, Package, Test Unreal Engine project.",
-        "Add Linux functionality support for their windows-based pipeline."
+        "Manage on premises and cloud infrastructure for various clients.",
+        "Manage zstack virtualization platform for various clients.",
+        "As a Subject Matter Expert providing support for junior engineer in (but not limited to) various tech stacks, eg: kubernetes both on cloud and baremetal, linux administration, monitoring, automation."
       ],
       "company": "Elitery - PT Data Sinergitama Jaya",
       "website": "http://elitery.com"
@@ -324,7 +324,7 @@
   "education": [
     {
       "institution": "Universitas Terbuka",
-      "area": "Fakultas Hukum",
+      "area": "Fakultas Hukum (Faculty of Law)",
       "studyType": "Bachelor",
       "startDate": "2023-06-01",
       "endDate": "",
