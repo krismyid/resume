@@ -38,6 +38,8 @@ jobs:
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN || secrets.GITHUB_TOKEN }}
         with:
           tag_name: resume-v${{ github.run_number }}
           name: Resume v${{ github.run_number }} - ${{ github.event.head_commit.message }}
