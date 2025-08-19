@@ -1,0 +1,3 @@
+[submodule "github-profile"]
+	path = github-profile
+	url = git@github.com:krismyid/krismyid.git
