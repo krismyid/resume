@@ -35,6 +35,12 @@ jobs:
             exit 1
           fi
           
+      - name: Rename PDF to unique filename
+        run: |
+          mv resume.pdf "Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          echo "📄 PDF renamed to: Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          ls -la "Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
