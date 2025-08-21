@@ -1,0 +1,142 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+
+% Page setup
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Custom colors
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{secondary}{RGB}{0, 0, 0}
+\definecolor{accent}{RGB}{0, 0, 0}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    urlcolor=primary,
+    linkcolor=primary
+}
+
+% Section formatting
+\titleformat{\section}
+    {\Large\bfseries\color{primary}}
+    {}{0em}{}[\titlerule]
+
+\titlespacing{\section}{0pt}{16pt}{8pt}
+
+% Subsection formatting
+\titleformat{\subsection}
+    {\large\bfseries\color{primary}}
+    {}{0em}{}
+
+\titlespacing{\subsection}{0pt}{12pt}{6pt}
+
+% Custom commands
+\newcommand{\header}[1]{\textbf{\color{primary}#1}}
+\newcommand{\company}[1]{\textbf{\color{primary}#1}}
+\newcommand{\position}[1]{\textbf{\color{secondary}#1}}
+\newcommand{\daterange}[1]{\color{secondary}#1}
+\newcommand{\skill}[1]{\textbf{#1}}
+\newcommand{\contact}[2]{\faIcon{#1} \href{#2}{#2}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries\color{primary} Motivation Letter}\\[1em]
+    {\Large\color{secondary} Christian Windi Utomo}\\[0.5em]
+    {\large DevOps Engineer \& Site Reliability Engineer}\\[1em]
+    
+    \begin{tabular}{ll}
+        \faIcon{envelope} Email: \href{mailto:hi@kris.my.id}{hi@kris.my.id} & 
+        \faIcon{phone} Phone: +62 821-4900-2334 \\
+        \faIcon{map-marker-alt} Location: Bogor, Jawa Barat, Indonesia & 
+        \faIcon{linkedin} LinkedIn: \href{https://www.linkedin.com/in/krismyid}{linkedin.com/in/krismyid} \\
+        \faIcon{github} GitHub: \href{http://github.com/krismyid}{github.com/krismyid}
+    \end{tabular}
+\end{center}
+
+\vspace{1em}
+
+% Date
+\begin{center}
+    \today
+\end{center}
+
+\vspace{1em}
+
+% Salutation
+\section{Dear Hiring Team,}
+
+I am writing to express my genuine enthusiasm for contributing to your organization and to share why I believe this opportunity represents a perfect alignment of mutual growth and success.
+
+% My Motivation
+\section{My Motivation}
+
+\textbf{I love to contribute more.} Throughout my 10+ years in DevOps and Site Reliability Engineering, I've discovered that my greatest satisfaction comes from going beyond the expected deliverables. Whether it's automating a manual process that saves hours of repetitive work, mentoring junior engineers to accelerate their growth, or identifying opportunities to optimize systems that others might overlook – I thrive on making meaningful contributions that create lasting impact.
+
+% Knowledge Sharing as a Core Value
+\section{Knowledge Sharing as a Core Value}
+
+\textbf{I'd love to share the knowledge that I know.} My experience has taught me that knowledge hoarding benefits no one, while knowledge sharing creates exponential value. I've seen firsthand how mentoring team members, documenting processes, and creating reusable solutions transforms individual capabilities into team strengths. When I share what I've learned about Kubernetes optimization, CI/CD best practices, or cloud cost management, it's not just about transferring information – it's about building a stronger, more capable team that can tackle increasingly complex challenges together.
+
+% The Win-Win-Win Vision
+\section{The Win-Win-Win Vision}
+
+I believe in creating situations where everyone benefits:
+
+\textbf{For Me:} The opportunity to work on challenging problems, learn from talented colleagues, and grow both technically and professionally in an environment that values innovation and continuous improvement.
+
+\textbf{For the Company:} A dedicated professional who not only delivers on assigned tasks but proactively identifies opportunities for improvement, cost optimization, and process enhancement. Someone who builds systems that scale, automates repetitive work, and creates documentation that reduces onboarding time and knowledge silos.
+
+\textbf{For Team Members:} A collaborative colleague who shares knowledge freely, mentors when appropriate, and contributes to a culture of continuous learning and mutual support. Someone who believes that when one team member grows, the entire team becomes stronger.
+
+% Why This Matters
+\section{Why This Matters}
+
+In DevOps and SRE, the difference between a good team member and an exceptional one often lies not just in technical skills, but in the willingness to lift others up while pushing the organization forward. I've experienced this transformation in my previous roles:
+
+\begin{itemize}[leftmargin=*, itemsep=4pt]
+    \item When I created reusable CI/CD templates, it wasn't just about my own efficiency – it was about enabling every developer to deploy faster and more reliably.
+    \item When I mentored junior engineers on Kubernetes best practices, it wasn't just about knowledge transfer – it was about building a more resilient and capable team.
+    \item When I optimized cloud costs by 50\%, it wasn't just about technical achievement – it was about freeing up resources for innovation and growth.
+\end{itemize}
+
+% My Commitment
+\section{My Commitment}
+
+If given the opportunity to join your team, I commit to:
+\begin{itemize}[leftmargin=*, itemsep=4pt]
+    \item \textbf{Delivering excellence} in my assigned responsibilities
+    \item \textbf{Proactively identifying} opportunities for improvement and optimization
+    \item \textbf{Sharing knowledge} through documentation, mentoring, and collaboration
+    \item \textbf{Building bridges} between different teams and technical domains
+    \item \textbf{Contributing to a culture} of continuous learning and mutual support
+\end{itemize}
+
+% Conclusion
+\section{Conclusion}
+
+I am excited about the possibility of joining your organization not just as an employee, but as a partner in building something exceptional. I believe that my passion for contribution, commitment to knowledge sharing, and focus on creating win-win situations would make me a valuable addition to your team.
+
+I look forward to discussing how we can work together to achieve mutual success and create an environment where everyone thrives.
+
+Thank you for considering my application.
+
+\vspace{1em}
+
+\textbf{Best regards,}\\[0.5em]
+Christian Windi Utomo\\
+DevOps Engineer \& Site Reliability Engineer\\
+hi@kris.my.id | linkedin.com/in/krismyid | github.com/krismyid
+
+\end{document} 

@@ -24,22 +24,42 @@ jobs:
           latexmk_use_lualatex: false
           working_directory: .
           
+      - name: Compile Motivation Letter
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: motivation-letter.tex
+          latexmk_use_xelatex: false
+          latexmk_use_lualatex: false
+          working_directory: .
+          
       - name: Verify PDF generation
         run: |
           if [ -f "resume.pdf" ]; then
-            echo "✅ PDF generated successfully"
+            echo "✅ Resume PDF generated successfully"
             ls -la resume.pdf
-            echo "PDF size: $(du -h resume.pdf | cut -f1)"
+            echo "Resume PDF size: $(du -h resume.pdf | cut -f1)"
           else
-            echo "❌ PDF generation failed"
+            echo "❌ Resume PDF generation failed"
             exit 1
           fi
           
-      - name: Rename PDF to unique filename
+          if [ -f "motivation-letter.pdf" ]; then
+            echo "✅ Motivation Letter PDF generated successfully"
+            ls -la motivation-letter.pdf
+            echo "Motivation Letter PDF size: $(du -h motivation-letter.pdf | cut -f1)"
+          else
+            echo "❌ Motivation Letter PDF generation failed"
+            exit 1
+          fi
+          
+      - name: Rename PDFs to unique filenames
         run: |
           mv resume.pdf "Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
-          echo "📄 PDF renamed to: Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          mv motivation-letter.pdf "Christian_Windi_Utomo_Motivation_Letter.pdf"
+          echo "📄 Resume PDF renamed to: Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          echo "📄 Motivation Letter PDF renamed to: Christian_Windi_Utomo_Motivation_Letter.pdf"
           ls -la "Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          ls -la "Christian_Windi_Utomo_Motivation_Letter.pdf"
           
       - name: Create Release
         id: create_release
@@ -72,12 +92,16 @@ jobs:
             
           files: |
             Christian_Windi_Utomo_DevOps_SRE_Resume.pdf
+            Christian_Windi_Utomo_Motivation_Letter.pdf
             resume.tex
+            motivation-letter.tex
           
       - name: Success notification
         run: |
-          echo "🎉 Resume successfully built and released!"
-          echo "📄 PDF: Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          echo "🎉 Documents successfully built and released!"
+          echo "📄 Resume PDF: Christian_Windi_Utomo_DevOps_SRE_Resume.pdf"
+          echo "📄 Motivation Letter PDF: Christian_Windi_Utomo_Motivation_Letter.pdf"
           echo "🏷️  Release tag: resume-v${{ github.run_number }}"
-          echo "📊 File size: $(du -h Christian_Windi_Utomo_DevOps_SRE_Resume.pdf | cut -f1)"
+          echo "📊 Resume size: $(du -h Christian_Windi_Utomo_DevOps_SRE_Resume.pdf | cut -f1)"
+          echo "📊 Motivation Letter size: $(du -h Christian_Windi_Utomo_Motivation_Letter.pdf | cut -f1)"
           echo "🔗 Check releases page for download links" 

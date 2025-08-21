@@ -1,6 +1,6 @@
 # Christian Windi Utomo - DevOps Engineer Resume
 
-A professional LaTeX resume for DevOps Engineers and Site Reliability Engineers, featuring QR codes for credential verification and modern cloud-focused skills.
+A professional LaTeX resume and motivation letter for DevOps Engineers and Site Reliability Engineers, featuring QR codes for credential verification and modern cloud-focused skills.
 
 ## ✨ Features
 
@@ -46,7 +46,8 @@ GitHub Actions automatically:
 ## 📁 Files
 
 - `resume.tex` - LaTeX source
-- `Christian_Windi_Utomo_DevOps_SRE_Resume.pdf` - Generated PDF (after build)
+- `Christian_Windi_Utomo_DevOps_SRE_Resume.pdf` - Generated Resume PDF (after build)
+- `Christian_Windi_Utomo_Motivation_Letter.pdf` - Generated Motivation Letter PDF (after build)
 - `Makefile` - Build automation
 - `.github/workflows/latex-resume.yml` - GitHub Actions
 - `README.md` - This file
