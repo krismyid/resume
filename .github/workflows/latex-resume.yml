@@ -25,6 +25,8 @@ jobs:
           working_directory: .
           docker_image: docker.io/texlive/texlive:latest
           extra_packages: fontawesome5 titlesec enumitem hyperref xcolor setspace qrcode
+        retry:
+          max_attempts: 3
 
       - name: Compile Motivation Letter
         uses: xu-cheng/latex-action@v3
@@ -35,6 +37,8 @@ jobs:
           working_directory: .
           docker_image: docker.io/texlive/texlive:latest
           extra_packages: fontawesome5 titlesec enumitem hyperref xcolor setspace
+        retry:
+          max_attempts: 3
           
       - name: Verify PDF generation
         run: |
