@@ -23,7 +23,9 @@ jobs:
           latexmk_use_xelatex: false
           latexmk_use_lualatex: false
           working_directory: .
-          
+          docker_image: docker.io/texlive/texlive:latest
+          extra_packages: fontawesome5 titlesec enumitem hyperref xcolor setspace qrcode
+
       - name: Compile Motivation Letter
         uses: xu-cheng/latex-action@v3
         with:
@@ -31,6 +33,8 @@ jobs:
           latexmk_use_xelatex: false
           latexmk_use_lualatex: false
           working_directory: .
+          docker_image: docker.io/texlive/texlive:latest
+          extra_packages: fontawesome5 titlesec enumitem hyperref xcolor setspace
           
       - name: Verify PDF generation
         run: |
